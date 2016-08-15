@@ -1,6 +1,6 @@
 # Users & Skills Tool For LiveEngage
 
-An example application that can be used for creating/updating users in LiveEngage and it can be used for creating skills in LiveEngage. The application uses the APIs the Skills and Users APIs that are available for LiveEngage. To run the tool, you will need to enable these APIs on your LiveEngage account.
+An example Node.js application that can be used for creating/updating users in LiveEngage and it can be used for creating skills in LiveEngage. The application uses the APIs the Skills and Users APIs that are available for LiveEngage. To run the tool, you will need to enable these APIs on your LiveEngage account.
 
 The tool will read in a CSV file, and then use the APIs to create/modify those users or skills in your LiveEngage account.
 
