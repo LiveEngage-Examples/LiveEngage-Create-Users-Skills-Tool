@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Update Users</title>
+  <% include ../partials/header.ejs %>
+  <script src="/js/player.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <br>
+    <form class="form-horizontal" role="form" method="POST" action="/updateUsersAPI">
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="accountNum">Account Number:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="accountNum" id="accountNum" placeholder="Enter account number" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="consumerKey">Consumer Key:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="consumerKey" id="consumerKey" placeholder="Enter consumer key" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="consumerSecret">Consumer Secret:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="consumerSecret" id="consumerSecret" placeholder="Enter consumer secret" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="accessToken">Access Token:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="accessToken" id="accessToken" placeholder="Enter access token" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="accessTokenSecret">Access Token Secret:</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" name="accessTokenSecret" id="accessTokenSecret" placeholder="Enter access token secret" required>
+        </div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="files">Import CSV File:</label>
+        <div class="col-sm-10">
+          <input type="file" id="files" name="files" class="form-control" multiple>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+          <a class="commandButton btn btn-block btn-default" id="submit-parse">Parse</a>
+        </div>
+        <div class="col-sm-4"></div>
+      </div>
+      <div class="form-group">
+        <label class="control-label col-sm-2" for="results">Parsed File:</label>
+        <div class="col-sm-10">
+            <textarea id="results" required="required" class="form-control" name="results"></textarea>
+        </div>
+      </div>
+      <div class="form-group">
+        <div class="col-sm-4">
+          <a href="/" class="commandButton btn btn-block btn-default">Main Menu</a>
+        </div>
+        <div class="col-sm-4">
+        </div>
+        <div class="col-sm-4">
+          <button type="submit" class="commandButton btn btn-block btn-default">Update Users</button>
+        </div>
+      </div>
+    </form>
+ </div>
+ <footer class="footer">
+      <div class="container">
+        <p class="text-muted">This tool was created as an example of how you can use the APIs to create/update users on your account. This is a not a product that is supported by LivePerson.</p>
+      </div>
+    </footer>
+</body>
+</html>
