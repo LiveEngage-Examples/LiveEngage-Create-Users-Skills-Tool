@@ -1,3 +1,5 @@
+*See LP developer site for API docs and guides: https://developers.liveperson.com/documents.html*
+
 # Users & Skills Tool For LiveEngage
 
 An example Node.js application that can be used for creating/updating users in LiveEngage and it can be used for creating skills in LiveEngage. The application uses the APIs the Skills and Users APIs that are available for LiveEngage. To run the tool, you will need to enable these APIs on your LiveEngage account.
